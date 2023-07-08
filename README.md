@@ -32,11 +32,26 @@ To dockerize the application, following were the steps taken :
 4. Build the Docker image: Once Flask application code and requirements.txt file was created , next step was to build the Docker image. Terminal or command prompt to navigate to the project directory, and run the command to build the image. Docker will use the instructions in the Dockerfile to build an image that includes application code and its dependencies.
 
 
+## Building and Pushing the Docker Image:
+To build and push the Docker image to a registry, The below are the steps taken:
+
+1. Log in to the Docker registry using `docker login`.
+2. Build an Image using : #docker build -t flask-app-image . (This command builds the Docker image using the Dockerfile and tags it as flask-app-image.)
+3. Run the Docker container based on the image using the following command:
+   #docker run -p 5000:5000 flask-app-image
+This command starts the Docker container and maps port 5000 of the container to port 5000 of your local machine.
+Flask application could be accessed by visiting http://localhost:5000 in your web browser. You should see the "Hello, Docker!" message displayed.
+#By following these steps, Flask application will be running inside a Docker container and accessible through your local machine's port 5000.
+
+#Additional:
+1. Created a repository and pushed the image into it by:
+     1. docker tag flask-app-image marlondockerb/flaskapp:v1.0
+     2. docker push marlondockerb/flaskapp:v1.0
 
 
-
-
-
+## Conclusion
+In this project, we demonstrated how to containerize a Python application using Docker. By containing the application and its dependencies in a Docker image, we can make sure a  consistent and reliable execution across different environments. 
+Docker allows for easier deployment and distribution of applications, making it a valuable tool for modern software development and deployment processes.
 
 # Follow Me On
 Add the link to your LinkedIn Profile
