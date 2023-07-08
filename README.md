@@ -3,13 +3,7 @@
 
 
 # Introduction & Goals
-- Introduce your project to the reader
-- Orient this section on the Table of contents
-- Write this like an executive summary
-  - With what data are you working
-  - What tools are you using
-  - What are you doing with these tools
-  - Once you are finished add the conclusion here as well
+In this project goal is to demonstrate the containerization of a beginner-level Python application using Docker. The application is a simple Flask web application that displays a "Hello, Docker!" message.
 
 # Contents
 
