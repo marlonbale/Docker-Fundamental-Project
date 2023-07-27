@@ -6,7 +6,7 @@
 In this project goal is to demonstrate the containerization of a beginner-level Python application using Docker. The application is a simple Flask web application that displays a "Hello, Docker!" message.
 
 ## Table of Contents
-1. [Introduction](#introduction)
+1. [Introduction](#Introduction)
 2. [Project Overview](#project-overview)
 3. [Dependencies and Tools](#dependencies-and-tools)
 4. [Dockerizing the Application](#dockerizing-the-application)
