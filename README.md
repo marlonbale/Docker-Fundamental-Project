@@ -39,9 +39,9 @@ To build and push the Docker image to a registry, The below are the steps taken:
 2. Build an Image using : **docker build -t flask-app-image .** (This command builds the Docker image using the Dockerfile and tags it as flask-app-image.)
 3. Run the Docker container based on the image using the following command:
    **docker run -p 5000:5000 flask-app-image**
-This command starts the Docker container and maps port 5000 of the container to port 5000 of your local machine.
-Flask application could be accessed by visiting http://localhost:5000 in your web browser. You should see the "Hello, Docker!" message displayed.
-By following these steps, Flask application will be running inside a Docker container and accessible through your local machine's port 5000.
+This command starts the Docker container and maps port 5000 of the container to port 5000 of our local machine.
+Flask application could be accessed by visiting http://localhost:5000 in our web browser and we should see the "Hello, Docker!" message displayed.
+By following these steps, Flask application will be running inside a Docker container and accessible through local machine's port 5000.
 
 #Additional:
 1. Created a repository and pushed the image into it by:
